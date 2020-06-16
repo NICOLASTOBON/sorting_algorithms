@@ -33,7 +33,7 @@ void shell_sort(int *array, size_t size)
 		{
 			tmp = array[i];
 
-			for (j = i; j >= gap_num && array[j - gap_num] > tmp; j -= gap_num)
+			for (j = i; j >= gap_num - 1 && array[j - gap_num] > tmp; j -= gap_num)
 				array[j] = array[j - gap_num];
 
 			array[j] = tmp;
