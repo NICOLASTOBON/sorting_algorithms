@@ -22,6 +22,9 @@ void shell_sort(int *array, size_t size)
 {
 	int gap_num, i, tmp, j;
 
+	if (!array || !size)
+		return;
+
 	gap_num = gap(size);
 
 	while (gap_num > 0)
